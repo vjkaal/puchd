@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/puchd/static/css/main.073c9b0a.css",
+    "main.js": "/puchd/static/js/main.2f872ae3.js",
+    "static/js/787.5f2190bf.chunk.js": "/puchd/static/js/787.5f2190bf.chunk.js",
+    "static/media/logo.svg": "/puchd/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/puchd/index.html",
+    "main.073c9b0a.css.map": "/puchd/static/css/main.073c9b0a.css.map",
+    "main.2f872ae3.js.map": "/puchd/static/js/main.2f872ae3.js.map",
+    "787.5f2190bf.chunk.js.map": "/puchd/static/js/787.5f2190bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2f872ae3.js"
+  ]
+}
