@@ -1,3 +1,5 @@
+import {Links} from "./comps/Links";
+
 export function Nav() {
   const links = [
     {
@@ -41,4 +43,7 @@ export function Nav() {
       text: 'contact'
     },
   ]
+  return (
+    <Links links={links} />
+  )
 }
