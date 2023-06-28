@@ -1,5 +1,7 @@
 import {Links} from "./comps/Links";
 
+import './Nav.sass'
+
 import home from './../res/logo/home_light.svg'
 export function Nav() {
   const links = [
@@ -54,6 +56,8 @@ export function Nav() {
     },
   ]
   return (
-    <Links links={links} />
+    <div className='header-nav'>
+      <Links links={links} />
+    </div>
   )
 }
