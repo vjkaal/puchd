@@ -16,3 +16,10 @@ export interface link {
   href: string,
   text: string
 }
+
+export interface input {
+  type: string,
+  value: string,
+  setValue: any,
+  placeholder: string
+}

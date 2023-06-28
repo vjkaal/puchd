@@ -1,7 +1,8 @@
 import { Link } from "./Link";
 import {ImageLink} from "./ImageLink";
+import {links} from "./Interface";
 
-export function Links(props:any) {
+export function Links(props:links) {
   return(
     <div className="Links-container">
       {props.links.map((link: { type: string; class: string; href: string; src: string; alt: string; text: string; }, index:number) =>{
