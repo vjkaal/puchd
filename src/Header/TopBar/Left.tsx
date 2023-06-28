@@ -1,5 +1,7 @@
 import {Links} from './../comps/Links'
 
+import './Left.sass'
+
 export function Left(){
   const links = [
     {
@@ -22,6 +24,8 @@ export function Left(){
     }
   ]
   return(
-    <Links links={links} />
+    <div className="left">
+      <Links links={links} />
+    </div>
   )
 }
