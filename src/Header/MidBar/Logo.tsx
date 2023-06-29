@@ -9,7 +9,9 @@ export function Logo() {
       </div>
       <div className="text">
         <h1>PANJAB UNIVERSITY</h1>
-        <h4>Established in 1882</h4>
+        <p>Established under The Panjab University Act VII of 1947
+          <br />
+          - enacted by Govt. of India</p>
       </div>
     </div>
   )
