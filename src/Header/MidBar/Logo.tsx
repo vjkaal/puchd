@@ -1,4 +1,5 @@
-import logo from './../res/logo/panjab-university.svg'
+import logo from './../../res/logo/panjab-university.svg'
+import './Logo.sass'
 
 export function Logo() {
   return(

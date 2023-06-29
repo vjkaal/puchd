@@ -1,14 +1,14 @@
 import {TopBar} from "./TopBar/TopBar";
 import {Nav} from "./Nav";
-import {Logo} from "./Logo";
-import {Search} from "./Search";
+
+import './Header.sass'
+import {MidBar} from "./MidBar/MidBar";
 
 export function Header(){
   return(
     <header>
       <TopBar />
-      <Logo/>
-      <Search />
+      <MidBar />
       <Nav />
     </header>
   )

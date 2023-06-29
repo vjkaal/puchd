@@ -1,7 +1,9 @@
 import {useState} from "react";
-import {Input} from './comps/Input';
+import {Input} from './../comps/Input';
 
-import search from './../res/logo/search_light.png'
+import search from './../../res/logo/search_light.svg'
+
+import './Search.sass'
 
 export function Search(){
   const [exp, setExp] = useState("");
