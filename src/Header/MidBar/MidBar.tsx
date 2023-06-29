@@ -4,7 +4,7 @@ import {Search} from "./Search";
 import './MidBar.sass'
 export function MidBar() {
   return(
-    <div className="midbar">
+    <div className="mid-bar">
       <Logo />
       <Search />
     </div>

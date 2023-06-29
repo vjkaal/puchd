@@ -5,7 +5,7 @@ export function Logo() {
   return(
     <div className="logo">
       <div className="image">
-        <img src={logo} alt="Panjab University" width="200px" />
+        <img src={logo} alt="Panjab University" width="120px" />
       </div>
       <div className="text">
         <h1>PANJAB UNIVERSITY</h1>
