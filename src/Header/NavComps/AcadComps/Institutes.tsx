@@ -1,7 +1,10 @@
 import {Links} from "../../comps/Links";
+import {Heading2} from "../../comps/Heading";
 
 export function Institutes() {
-  const insts = [
+  const heading = "institutes"
+
+  const list = [
     {
       class: "arts",
       href: "#",
@@ -10,7 +13,7 @@ export function Institutes() {
     {
       class: "comm",
       href: "#",
-      text: "business management and commerce"
+      text: "business management & commerce"
     },
     {
       class: "education",
@@ -20,7 +23,7 @@ export function Institutes() {
     {
       class: "engg",
       href: "#",
-      text: "engineering and technology"
+      text: "engineering & technology"
     },
     {
       class: "language",
@@ -46,12 +49,13 @@ export function Institutes() {
       class: "science",
       href: "#",
       text: "science"
-    },
+    }
   ]
 
   return(
     <div className="inst-links-list">
-      <Links links={insts} />
+      <Heading2 heading={heading} />
+      <Links links={list} />
     </div>
   )
 }

@@ -1,7 +1,10 @@
 import {Links} from "../../comps/Links";
+import {Heading2} from "../../comps/Heading";
 
 export function Centres() {
-  const centres = [
+  const heading = "centres"
+
+  const list = [
     {
       class: "arts",
       href: "#",
@@ -45,8 +48,9 @@ export function Centres() {
   ]
 
   return (
-    <div className="centres-list">
-      <Links links={centres} />
+    <div className={heading + "-list"}>
+      <Heading2 heading={heading} />
+      <Links links={list} />
     </div>
   )
 }

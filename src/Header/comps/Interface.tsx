@@ -23,3 +23,7 @@ export interface input {
   setValue: any,
   placeholder: string
 }
+
+export interface heading {
+  heading: string
+}

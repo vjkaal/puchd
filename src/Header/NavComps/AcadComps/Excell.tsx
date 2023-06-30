@@ -1,7 +1,10 @@
 import {Links} from "../../comps/Links";
+import {Heading2} from "../../comps/Heading";
 
 export function Excell() {
-  const excel = [
+  const heading = "excell"
+
+  const list = [
     {
       class: "cas",
       href: "#",
@@ -20,13 +23,14 @@ export function Excell() {
     {
       class: "fist",
       href: "#",
-      text: "Funds for Improvement Of Science and Technology (FlST)"
+      text: "Funds for Improvement Of Science and Technology (FIST)"
     }
   ]
 
   return (
-    <div className="excell-list">
-      <Links links={excel} />
+    <div className={heading + "-list"}>
+      <Heading2 heading={heading} />
+      <Links links={list} />
     </div>
   )
 }

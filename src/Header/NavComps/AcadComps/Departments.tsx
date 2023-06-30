@@ -1,7 +1,11 @@
 import {Links} from '../../comps/Links'
+import {Heading2} from "../../comps/Heading";
 
 export function Departments() {
-  const depts = [
+
+  const heading = "departments"
+
+  const list = [
     {
       class: "arts",
       href: "#",
@@ -38,9 +42,11 @@ export function Departments() {
       text: 'multi-facility departments'
     }
   ]
+
   return(
-    <div className="dept-links-list">
-      <Links links={depts} />
+    <div className={heading + "-list"}>
+      <Heading2 heading={heading} />
+      <Links links={list} />
     </div>
   )
 }
