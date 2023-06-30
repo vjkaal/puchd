@@ -14,7 +14,7 @@ export function Departments() {
     {
       class: "design",
       href: "#",
-      text: "design and fine arts"
+      text: "design & fine arts"
     },
     {
       class: "education",

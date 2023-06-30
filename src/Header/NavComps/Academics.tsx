@@ -8,11 +8,11 @@ import {Schools} from "./AcadComps/Schools";
 import {Distance} from "./AcadComps/Distance";
 import {Colleges} from "./AcadComps/Colleges";
 
-import ''
+import './NavCompsDiv.sass'
 
 export function Academics() {
   return(
-    <div className="academics">
+    <div className="academics nav-comp-div">
       <Departments />
       <Institutes />
       <Centres />
