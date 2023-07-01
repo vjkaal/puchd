@@ -17,3 +17,12 @@ export function Heading2(props:heading) {
     </div>
   )
 }
+
+
+export function Heading3(props:heading) {
+  return(
+    <div className="heading">
+      <h3>{props.heading}</h3>
+    </div>
+  )
+}

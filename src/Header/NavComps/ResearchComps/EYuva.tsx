@@ -1,9 +1,8 @@
 import {Heading3} from "../../comps/Heading";
 import {Links} from "../../comps/Links";
 
-export function Colloquium() {
-
-  const heading = 'Colloquium'
+export function EYuva() {
+  const heading = "E_Yuva, empovering youth"
 
   const list = [
     {
@@ -12,7 +11,6 @@ export function Colloquium() {
       text: "University Conferences"
     }
   ]
-
 
   return (
     <div className={heading + '-list'}>
