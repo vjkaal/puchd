@@ -1,20 +1,17 @@
 @import './../../master'
 
-.nav-comp-div
+.nav-comp-dropdown
   min-height: 65vh
   max-height: 65vh
   min-width: 90vw
   max-width: 90vw
   margin: 4.5rem auto 0
-  //border: 2px solid $clr-p
+  border: 2px solid $clr-p
   border-radius: 1rem
   //box-shadow: 0 0 2rem $clr-d
   background-color: $clr-l
-  display: flex
-  flex-flow: column wrap
-  justify-content: flex-start
-  align-items: flex-start
-  padding: 0 2rem
+
+  // old styling code
   > div
     padding-top: 1rem
     padding-right: 1rem
@@ -25,3 +22,33 @@
       padding-left: 1rem
       text-transform: capitalize
       font-size: $fs-normal
+
+  .flex-class
+    max-width: inherit
+    max-height: inherit
+    display: flex
+    flex-flow: column wrap
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 0 2rem
+
+    .nav-drop-list-container
+      all: unset
+      //padding-top: 1rem
+      padding-right: 1rem
+
+      > button
+        padding: 0
+        border: 0px
+        background: transparent
+        color: $clr-p
+
+      .Links-container
+        padding-left: 1rem
+        text-transform: capitalize
+        font-size: $fs-normal
+
+
+#admissions-nav-dropdown-list
+  min-height: 70vh
+  max-height: 70vh
