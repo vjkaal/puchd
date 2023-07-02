@@ -1,9 +1,7 @@
+import React, {useEffect, useState} from "react";
 import {Admsn} from "./AdmsnComps/Admsn";
 import {Entrance} from "./AdmsnComps/Entrance";
 import {Distance} from "./AdmsnComps/Distance";
-
-import './NavCompsDiv.sass'
-import React, {useEffect, useState} from "react";
 import {AcadProgs} from "./AdmsnComps/AcadProgs";
 import {CetUg} from "./AdmsnComps/CetUg";
 import {UgLaw} from "./AdmsnComps/UgLaw";
@@ -13,6 +11,9 @@ import {Online} from "./AdmsnComps/Online";
 import {CetPg} from "./AdmsnComps/CetPg";
 import {PuLeet} from "./AdmsnComps/PuLeet";
 import {PgLaw} from "./AdmsnComps/PgLaw";
+
+import './NavCompsDiv.sass'
+
 export function Admission() {
   const [showList, setShowList] = useState(true);
 

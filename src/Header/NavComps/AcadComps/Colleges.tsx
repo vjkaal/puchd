@@ -1,4 +1,4 @@
-import {Heading2} from "../../comps/Heading";
+import {Heading2, Heading3} from "../../comps/Heading";
 import {Links} from "../../comps/Links";
 
 export function Colleges() {
@@ -17,10 +17,14 @@ export function Colleges() {
     }
   ]
 
-  return(
-    <div className={heading + '-list'}>
-      <Heading2 heading={heading} />
-      <Links links={list} />
+  return (
+    <div className={heading + ' nav-drop-list-container'}>
+      <button>
+        <Heading3 heading={heading} />
+      </button>
+      <div className={heading+'-list nav-drop-list-content'}>
+        <Links links={list} />
+      </div>
     </div>
   )
 }

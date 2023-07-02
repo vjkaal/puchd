@@ -12,16 +12,22 @@ import './NavCompsDiv.sass'
 
 export function Academics() {
   return(
-    <div className="academics nav-comp-div">
-      <Departments />
-      <Institutes />
-      <Centres />
-      <Excell />
-      <Facilities />
-      <Chairs />
-      <Schools />
-      <Distance />
-      <Colleges />
+    <div
+      className="nav-comp-dropdown"
+      id="acad-nav-dropdown-list"
+      // onMouseOver={toggleList}
+    >
+      <div className="flex-class">
+        <Departments />
+        <Institutes />
+        <Centres />
+        <Excell />
+        <Facilities />
+        <Chairs />
+        <Schools />
+        <Distance />
+        <Colleges />
+      </div>
     </div>
   )
 }

@@ -15,18 +15,24 @@ import './NavCompsDiv.sass'
 
 export function Research() {
   return (
-    <div className="research nav-comp-div">
-      <Journals />
-      <RDC />
-      <DST />
-      <Notices_RDC />
-      <Conferences />
-      <Publications />
-      <Colloquium />
-      <EYuva />
-      <SCU />
-      <Notices_SCU />
-      <Collaborations />
+    <div
+      className="nav-comp-dropdown"
+      id="research-nav-dropdown-list"
+      // onMouseOver={toggleList}
+    >
+      <div className="flex-class">
+        <Journals />
+        <RDC />
+        <DST />
+        <Notices_RDC />
+        <Conferences />
+        <Publications />
+        <Colloquium />
+        <EYuva />
+        <SCU />
+        <Notices_SCU />
+        <Collaborations />
+      </div>
     </div>
   )
 }

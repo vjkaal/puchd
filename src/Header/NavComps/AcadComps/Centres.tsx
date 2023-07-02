@@ -1,5 +1,5 @@
 import {Links} from "../../comps/Links";
-import {Heading2} from "../../comps/Heading";
+import {Heading2, Heading3} from "../../comps/Heading";
 
 export function Centres() {
   const heading = "centres"
@@ -48,9 +48,13 @@ export function Centres() {
   ]
 
   return (
-    <div className={heading + "-list"}>
-      <Heading2 heading={heading} />
-      <Links links={list} />
+    <div className={heading + ' nav-drop-list-container'}>
+      <button>
+        <Heading3 heading={heading} />
+      </button>
+      <div className={heading+'-list nav-drop-list-content'}>
+        <Links links={list} />
+      </div>
     </div>
   )
 }

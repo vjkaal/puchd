@@ -14,7 +14,8 @@ export interface link {
   type: string
   class: string,
   href: string,
-  text: string
+  text: string,
+  title: string
 }
 
 export interface input {

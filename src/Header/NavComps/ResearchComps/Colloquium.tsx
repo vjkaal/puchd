@@ -15,9 +15,13 @@ export function Colloquium() {
 
 
   return (
-    <div className={heading + '-list'}>
-      <Heading3 heading={heading} />
-      <Links links={list} />
+    <div className={heading + ' nav-drop-list-container'}>
+      <button>
+        <Heading3 heading={heading} />
+      </button>
+      <div className={heading+'-list nav-drop-list-content'}>
+        <Links links={list} />
+      </div>
     </div>
   )
 }
