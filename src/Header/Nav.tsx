@@ -1,11 +1,13 @@
+import React, {useEffect, useState} from "react";
 import {Links} from "./comps/Links";
+import {Academics} from "./NavComps/Academics";
+import {Research} from './NavComps/Research';
+import {Admission} from "./NavComps/Admission";
+
+import home from './../res/logo/home_light.svg'
 
 import './Nav.sass'
 
-import home from './../res/logo/home_light.svg'
-import React, {useEffect, useState} from "react";
-import {Simulate} from "react-dom/test-utils";
-import mouseDown = Simulate.mouseDown;
 export function Nav() {
 
   const [showList, setShowList] = useState(-1)
@@ -18,15 +20,18 @@ export function Nav() {
     }
   }, [showList])
 
-  // useEffect(()=>{
-  //   if(showList !== -1){
-  //     for(let i=0; i<3; i++){
-  //       document.onclick = (e: MouseEvent) => {
-  //
-  //       }
-  //     }
-  //   }
-  // }, [mouseDown])
+  document.onclick = (e) => {
+    const targetElem = e.target as HTMLElement
+    console.log(targetElem)
+    const element = document.getElementsByClassName('click-to-hide')[showList]
+    if(element === undefined) return
+    console.log(element.id, targetElem.id)
+    if(targetElem.id === element.id) return
+    if(targetElem.id !== element.id){
+      element.setAttribute('style', 'display: none;')
+      setShowList(-1)
+    }
+  }
 
 
   const links = [
@@ -87,6 +92,9 @@ export function Nav() {
   return (
     <div className='header-nav'>
       <Links links={links} />
+      <Academics />
+      <Research />
+      <Admission />
     </div>
   )
 }
