@@ -3,7 +3,32 @@ import {Links} from "./comps/Links";
 import './Nav.sass'
 
 import home from './../res/logo/home_light.svg'
+import React, {useEffect, useState} from "react";
+import {Simulate} from "react-dom/test-utils";
+import mouseDown = Simulate.mouseDown;
 export function Nav() {
+
+  const [showList, setShowList] = useState(-1)
+
+  useEffect(()=>{
+    console.log(showList)
+    for(let i=0; i<3; i++){
+      if(i === showList) document.getElementsByClassName('nav-comp-dropdown')[i].setAttribute('style', "display: block;")
+      else document.getElementsByClassName('nav-comp-dropdown')[i].setAttribute('style', "display: none;")
+    }
+  }, [showList])
+
+  // useEffect(()=>{
+  //   if(showList !== -1){
+  //     for(let i=0; i<3; i++){
+  //       document.onclick = (e: MouseEvent) => {
+  //
+  //       }
+  //     }
+  //   }
+  // }, [mouseDown])
+
+
   const links = [
     {
       type: 'image',
@@ -19,9 +44,10 @@ export function Nav() {
       text: 'about'
     },
     {
-      type: 'text',
+      type: 'buttonDropDown',
       class: 'academics',
-      href: '#',
+      mouseOver: () => setShowList(0),
+      // mouseOut: ()=>setShowList(-1),
       text: 'academics'
     },
     {
@@ -31,15 +57,17 @@ export function Nav() {
       text: 'administration'
     },
     {
-      type: 'text',
+      type: 'buttonDropDown',
       class: 'research',
-      href: '#',
+      mouseOver:()=> setShowList(1),
+      // mouseOut:()=> setShowList(-1),
       text: 'research'
     },
     {
-      type: 'text',
+      type: 'buttonDropDown',
       class: 'admission',
-      href: '#',
+      mouseOver: ()=>setShowList(2),
+      // mouseOut: ()=>setShowList(-1),
       text: 'admission'
     },
     {
@@ -55,6 +83,7 @@ export function Nav() {
       text: 'contact'
     },
   ]
+
   return (
     <div className='header-nav'>
       <Links links={links} />

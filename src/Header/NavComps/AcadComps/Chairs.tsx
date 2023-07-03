@@ -1,4 +1,4 @@
-import {Heading2, Heading3} from "../../comps/Heading";
+import {Heading3} from "../../comps/Heading";
 import {Links} from "../../comps/Links";
 
 export function Chairs() {

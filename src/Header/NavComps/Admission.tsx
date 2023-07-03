@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from "react";
 import {Admsn} from "./AdmsnComps/Admsn";
 import {Entrance} from "./AdmsnComps/Entrance";
 import {Distance} from "./AdmsnComps/Distance";
@@ -15,32 +14,9 @@ import {PgLaw} from "./AdmsnComps/PgLaw";
 import './NavCompsDiv.sass'
 
 export function Admission() {
-  const [showList, setShowList] = useState(true);
-
-  useEffect(()=>{
-    console.log(showList)
-    const elem: HTMLElement | null = document.getElementById('admissions-nav-dropdown-list')
-    if(document.getElementById('admissions-nav-dropdown-list') !== undefined){
-      if(!showList){
-        // @ts-ignore
-        elem.setAttribute('style', "display: none;")
-      }
-      else {
-        // @ts-ignore
-        elem.setAttribute('style', 'display: block;')
-      }
-    }
-
-  }, [showList])
-
-  const toggleList: React.MouseEventHandler<HTMLDivElement> = (event) => {
-    if(!showList) setShowList(true)
-    else setShowList(false)
-  };
-
   return(
     <div
-      className="nav-comp-dropdown"
+      className="nav-comp-dropdown click-to-hide"
       id="admissions-nav-dropdown-list"
       // onMouseOver={toggleList}
     >

@@ -16,7 +16,7 @@ import './NavCompsDiv.sass'
 export function Research() {
   return (
     <div
-      className="nav-comp-dropdown"
+      className="nav-comp-dropdown click-to-hide"
       id="research-nav-dropdown-list"
       // onMouseOver={toggleList}
     >

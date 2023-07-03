@@ -13,7 +13,7 @@ import './NavCompsDiv.sass'
 export function Academics() {
   return(
     <div
-      className="nav-comp-dropdown"
+      className="nav-comp-dropdown click-to-hide"
       id="acad-nav-dropdown-list"
       // onMouseOver={toggleList}
     >

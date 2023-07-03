@@ -44,7 +44,7 @@ export function Online() {
     {
       class: 'nriGuidelines',
       href: '#',
-      text: 'Guidelines for NR(Foreign Nationals Category)'
+      text: 'Guidelines for NRI'
     },
     {
       class: 'nriAdmsn',

@@ -1,5 +1,5 @@
 import {Links} from "../../comps/Links";
-import {Heading2, Heading3} from "../../comps/Heading";
+import {Heading3} from "../../comps/Heading";
 
 export function Institutes() {
   const heading = "institutes"

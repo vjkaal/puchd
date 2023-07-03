@@ -1,10 +1,10 @@
 import {Heading3} from "../../comps/Heading";
-import {useEffect, useState} from "react";
+// import {useEffect, useState} from "react";
 import {Links} from "../../comps/Links";
 
 export function Admsn() {
   const heading = "university admissions"
-  const [show, setShow] = useState(false)
+  // const [show, setShow] = useState(false)
 
   const list = [
     {
@@ -56,22 +56,11 @@ export function Admsn() {
     }
   ]
 
-  function setShowList(){
-    if(show === true) setShow(false)
-    else setShow(true)
-  }
-
-  useEffect(()=>{
-    if(show){
-      const elem : HTMLElement | null = document.querySelector('.')
-    }
-  })
-
   
 
   return (
     <div className={heading + ' nav-drop-list-container'}>
-      <button onClick={setShowList}>
+      <button>
         <Heading3 heading={heading} />
       </button>
       <div className={heading+'-list nav-drop-list-content'}>
