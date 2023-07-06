@@ -17,10 +17,16 @@ export interface link {
 }
 
 export interface buttonDropDown {
-  class: string
+  class: string,
   text: string,
   onMouseOver: ()=>void,
   onMouseOut: ()=>void
+}
+
+export interface buttonLink{
+  class: string,
+  text: string,
+  href: string
 }
 
 export interface input {
@@ -32,4 +38,8 @@ export interface input {
 
 export interface heading {
   heading: string
+}
+
+export interface paragraph{
+  content: string
 }
