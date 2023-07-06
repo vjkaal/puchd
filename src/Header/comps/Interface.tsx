@@ -3,7 +3,6 @@ export interface links {
 }
 
 export interface imageLink {
-  type: string,
   class: string,
   href: string,
   src: string,
@@ -11,8 +10,26 @@ export interface imageLink {
 }
 
 export interface link {
-  type: string
   class: string,
   href: string,
-  text: string
+  text: string,
+  title: string
+}
+
+export interface buttonDropDown {
+  class: string
+  text: string,
+  onMouseOver: ()=>void,
+  onMouseOut: ()=>void
+}
+
+export interface input {
+  type: string,
+  value: string,
+  setValue: any,
+  placeholder: string
+}
+
+export interface heading {
+  heading: string
 }

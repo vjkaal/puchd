@@ -1,5 +1,7 @@
 import {Links} from "../comps/Links";
 
+import './Right.sass'
+
 export function Right(){
   const links = [
     {
@@ -40,6 +42,8 @@ export function Right(){
     }
   ]
   return(
-    <Links links={links} />
+    <div className="right">
+      <Links links={links} />
+    </div>
   )
 }

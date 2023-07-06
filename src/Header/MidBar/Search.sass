@@ -1,0 +1,37 @@
+@import './../../master'
+
+.main-search-container
+  width: fit-content
+  height: fit-content
+  background: transparent
+
+  input
+    font-size: $fs-large
+    height: 2rem
+    background: gray
+    color: $clr-l
+    border: 0px
+    border-radius: .5rem
+    padding-left: .5rem
+    padding-right: 2rem
+    transition: background-color .3s ease-in-out
+    &::placeholder
+      color: $clr-l
+    &::-ms-input-placeholder
+      color: $clr-l
+    &:focus
+      opacity: 1
+      outline: none
+      background: $clr-d
+
+  button
+    position: relative
+    left: -8%
+    top: .2rem
+    background: transparent
+    border: 0px
+    padding: 0
+    height: fit-content
+    img
+      width: $fs-heading
+      aspect-ratio: 1.1
