@@ -3,7 +3,7 @@ import {Links} from "../../comps/Links";
 
 
 export function RDC() {
-  const heading = 'RESEARCH AND DEVELOPMENT CELL(RDC)'
+  const heading = 'RESEARCH AND DEVELOPMENT CELL (RDC)'
 
   const list = [
     {

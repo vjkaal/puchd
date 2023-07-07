@@ -2,7 +2,7 @@ import {Heading3} from "../../comps/Heading";
 import {Links} from "../../comps/Links";
 
 export function Notices_SCU() {
-  const heading = "Notices(SAIF, CIL, AND UCIM)"
+  const heading = "Notices (SAIF, CIL, AND UCIM)"
 
   const list = [
     {

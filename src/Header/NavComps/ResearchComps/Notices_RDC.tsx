@@ -2,7 +2,7 @@ import {Heading3} from "../../comps/Heading";
 import {Links} from "../../comps/Links";
 
 export function Notices_RDC() {
-  const heading = "NOTICES(RDC)"
+  const heading = "NOTICES (RDC)"
 
   const list = [
     {
