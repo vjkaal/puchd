@@ -1,8 +1,8 @@
 import {Links} from "../../comps/Links";
-import {Heading3} from "../../comps/Heading";
+import {Heading4} from "../../comps/Heading";
 
 export function Excell() {
-  const heading = "excell"
+  const heading = "centres of excellence"
 
   const list = [
     {
@@ -30,7 +30,7 @@ export function Excell() {
   return (
     <div className={heading + ' nav-drop-list-container'}>
       <button>
-        <Heading3 heading={heading} />
+        <Heading4 heading={heading} />
       </button>
       <div className={heading+'-list nav-drop-list-content'}>
         <Links links={list} />

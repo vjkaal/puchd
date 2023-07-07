@@ -19,14 +19,14 @@ export function Academics() {
     >
       <div className="flex-class">
         <Departments />
-        <Institutes />
         <Centres />
+        <Institutes />
         <Excell />
         <Facilities />
         <Chairs />
         <Schools />
-        <Distance />
         <Colleges />
+        <Distance />
       </div>
     </div>
   )
