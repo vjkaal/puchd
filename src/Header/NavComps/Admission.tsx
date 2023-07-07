@@ -22,17 +22,17 @@ export function Admission() {
     >
       <div className="flex-class">
         <Admsn />
-        <Entrance />
+        <Online />
         <Distance />
+        <Entrance />
         <AcadProgs />
         <CetUg />
         <UgLaw />
-        <PuThat />
-        <PuMeet />
-        <Online />
         <CetPg />
-        <PuLeet />
         <PgLaw />
+        <PuThat />
+        <PuLeet />
+        <PuMeet />
       </div>
     </div>
   )

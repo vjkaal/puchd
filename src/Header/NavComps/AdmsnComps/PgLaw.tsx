@@ -1,4 +1,4 @@
-import {Heading3} from "../../comps/Heading";
+import {Heading4} from "../../comps/Heading";
 import {Links} from "../../comps/Links";
 
 export function PgLaw() {
@@ -35,7 +35,7 @@ export function PgLaw() {
   return (
     <div className={heading + ' nav-drop-list-container'}>
       <button>
-        <Heading3 heading={heading} />
+        <Heading4 heading={heading} />
       </button>
       <div className={heading+'-list nav-drop-list-content'}>
         <Links links={list} />

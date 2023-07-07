@@ -15,8 +15,10 @@ export function Nav() {
   useEffect(()=>{
     console.log(showList)
     for(let i=0; i<3; i++){
-      if(i === showList) document.getElementsByClassName('nav-comp-dropdown')[i].setAttribute('style', "display: block;")
-      else document.getElementsByClassName('nav-comp-dropdown')[i].setAttribute('style', "display: none;")
+      if(i === showList){
+        document.getElementsByClassName('nav-comp-dropdown')[i].setAttribute('style', "opacity: 1;")
+      }
+      else document.getElementsByClassName('nav-comp-dropdown')[i].setAttribute('style', "opacity: 0;")
     }
   }, [showList])
 

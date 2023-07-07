@@ -1,4 +1,4 @@
-import {Heading3} from "../../comps/Heading";
+import {Heading4} from "../../comps/Heading";
 // import {useEffect, useState} from "react";
 import {Links} from "../../comps/Links";
 
@@ -61,7 +61,7 @@ export function Admsn() {
   return (
     <div className={heading + ' nav-drop-list-container'}>
       <button>
-        <Heading3 heading={heading} />
+        <Heading4 heading={heading} />
       </button>
       <div className={heading+'-list nav-drop-list-content'}>
         <Links links={list} />

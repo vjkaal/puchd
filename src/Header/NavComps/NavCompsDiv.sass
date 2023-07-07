@@ -1,26 +1,31 @@
 @import './../../master'
 
 .nav-comp-dropdown
-  min-width: 90vw
-  max-width: 90vw
-  min-height: 34vw
-  max-height: 34vw
+  min-width: 100%
+  max-width: 100%
+  min-height: 25vw
+  max-height: 28vw
   aspect-ratio: 16.9
-  margin: 0 auto
+  position: absolute
   //border: 2px solid $clr-p
-  padding: 1rem 0 0
-  border-radius: 1rem
-  box-shadow: 0 0 2rem $clr-d
-  background-color: $clr-l
+  transition: opacity .5s ease-in
+  -moz-transition: opacity .5s ease-in
+  -webkit-transition: opacity .5s ease-in
 
   .flex-class
-    max-width: inherit
+    min-width: 90vw
+    max-width: 90vw
     max-height: inherit
+    padding: 0rem 2rem 1rem
+    margin: 0 auto
+    //border: 2px solid $clr-p
+    background-color: $clr-l
+    border-radius: 1rem
+    box-shadow: 0 0 2rem $clr-d
     display: flex
     flex-flow: column wrap
     justify-content: flex-start
     align-items: flex-start
-    padding: 0 2rem
 
     .nav-drop-list-container
       all: unset
@@ -44,5 +49,11 @@
         color: rgba($clr-d, 0.9)
 
 #acad-nav-dropdown-list
-  min-height: 30vw
-  max-height: 30vw
+  min-height: 26vw
+  max-height: 26vw
+
+#research-nav-dropdown-list, #acad-nav-dropdown-list
+  .nav-drop-list-container
+    max-width: 25%
+#research-nav-dropdown-list
+  max-height: 33vw
