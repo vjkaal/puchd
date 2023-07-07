@@ -2,7 +2,7 @@ import {Links} from "../../comps/Links";
 import {Heading4} from "../../comps/Heading";
 
 export function Excell() {
-  const heading = "excell"
+  const heading = "centres of excellence"
 
   const list = [
     {

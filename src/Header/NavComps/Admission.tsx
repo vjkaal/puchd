@@ -28,11 +28,11 @@ export function Admission() {
         <AcadProgs />
         <CetUg />
         <UgLaw />
-        <CetPg />
-        <PgLaw />
         <PuThat />
         <PuLeet />
         <PuMeet />
+        <CetPg />
+        <PgLaw />
       </div>
     </div>
   )

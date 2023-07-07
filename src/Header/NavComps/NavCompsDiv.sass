@@ -5,9 +5,10 @@
   max-width: 100%
   min-height: 25vw
   max-height: 28vw
-  aspect-ratio: 16.9
+  //aspect-ratio: 16.9
   position: absolute
   //border: 2px solid $clr-p
+  opacity: 0
   transition: opacity .5s ease-in
   -moz-transition: opacity .5s ease-in
   -webkit-transition: opacity .5s ease-in
@@ -16,7 +17,7 @@
     min-width: 90vw
     max-width: 90vw
     max-height: inherit
-    padding: 0rem 2rem 1rem
+    padding: 0 2rem 1rem
     margin: 0 auto
     //border: 2px solid $clr-p
     background-color: $clr-l
@@ -37,7 +38,7 @@
 
       > button
         padding: 0
-        border: 0px
+        border: 0
         text-align: left
         background: transparent
         color: $clr-p
@@ -49,8 +50,11 @@
         color: rgba($clr-d, 0.9)
 
 #acad-nav-dropdown-list
-  min-height: 26vw
-  max-height: 26vw
+  @media(min-width: $laptop) and (max-width: $desktop)
+    min-height: 25vw
+    max-height: 26vw
+  @media screen and (min-width: $desktop)
+    max-height: 25vw
 
 #research-nav-dropdown-list, #acad-nav-dropdown-list
   .nav-drop-list-container
